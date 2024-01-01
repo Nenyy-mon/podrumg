@@ -1,0 +1,18 @@
+.playlistBlock {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+}
+.track {
+  width: 90%;
+  height: 40px;
+  background-color: beige;
+  transition: 0.3s;
+}
+.track:hover {
+  scale: 1.1;
+}

@@ -1,0 +1,17 @@
+/* width */
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: aquamarine;
+  border-radius: 10px;
+}

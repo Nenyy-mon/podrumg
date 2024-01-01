@@ -1,0 +1,123 @@
+@font-face {
+  font-family: stretch_font;
+  src: url("../assets/fonts/STRRETCH SANS.ttf");
+}
+body {
+  margin: 0;
+  background-color: black;
+  padding: 0;
+  font-family: stretch_font;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 99%;
+  justify-content: space-between;
+  color: aquamarine;
+  background-color: black;
+  z-index: 2;
+  align-items: end;
+  padding: 10px;
+}
+.logoText,
+.LOG {
+  padding-left: 5%;
+  display: flex;
+  align-items: end;
+}
+.p {
+  width: 7em;
+}
+.odrum {
+  padding-left: 5px;
+  margin-bottom: 2%;
+}
+.gang-list {
+  padding-right: 5%;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  height: 100%;
+  align-items: end;
+}
+.gang-list a {
+  color: aquamarine;
+  text-decoration: none;
+}
+.gang-list h3 {
+  margin-bottom: 0.5em;
+}
+.LOG {
+  text-decoration: none;
+  color: aquamarine;
+}
+@media (max-width: 850px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoText,
+  .LOG {
+    padding-left: 0%;
+    display: flex;
+    align-items: end;
+  }
+  .p {
+    width: 3em;
+  }
+  .odrum {
+    font-size: 1em;
+    padding-left: 5px;
+    margin-bottom: 2%;
+  }
+  .gang-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.5em;
+  }
+
+  .LOG {
+    text-decoration: none;
+    color: aquamarine;
+  }
+}
+@media (max-width: 450px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoText,
+  .LOG {
+    padding-left: 0%;
+    display: flex;
+    align-items: end;
+  }
+  .p {
+    width: 2em;
+  }
+  .odrum {
+    font-size: 0.6em;
+    padding-left: 5px;
+    margin-bottom: 2%;
+  }
+  .gang-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.5em;
+  }
+
+  .LOG {
+    text-decoration: none;
+    color: aquamarine;
+  }
+}

@@ -1,0 +1,31 @@
+.main {
+  width: 96vw;
+  height: 7vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 14;
+}
+.logo {
+  display: flex;
+}
+.log {
+  display: flex;
+  align-items: end;
+  text-decoration: none;
+  justify-content: center;
+}
+.podrumL {
+  width: 2em;
+}
+
+.goback {
+  padding-bottom: 0;
+  color: aquamarine;
+}
+.linkBack {
+  color: aquamarine !important;
+  text-decoration: none;
+}

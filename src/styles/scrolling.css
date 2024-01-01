@@ -1,0 +1,150 @@
+.content {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  display: flex;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.gmizi {
+  background-image: url("../assets/scrolling/gmizi stretched.png.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(133, 201, 209);
+}
+
+.pCont {
+  width: 100vw;
+  font-size: 2vw;
+  padding-left: 45%;
+  color: aquamarine;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+.pCont a {
+  background-color: black;
+  color: aquamarine;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 2em;
+}
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw !important;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.fejzzz {
+  background-image: url("../assets/scrolling/fejzzstretched.png.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.neoni {
+  background-image: url("../assets/scrolling/neoni stretched.png.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rafali {
+  background-image: url("../assets/scrolling/rafali stretched.png.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 680px) {
+  .gmizi {
+    background-image: url("../assets/images/cropped/crop_london.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(133, 201, 209);
+  }
+  .gmizi::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.396);
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+  .pCont {
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 20%;
+    width: 100vw;
+    font-size: 6vw;
+    z-index: 6;
+    display: flex;
+    font-weight: 500;
+    text-align: center;
+  }
+  div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw !important;
+    box-sizing: border-box;
+  }
+  .fejzz {
+    background-image: url("../assets/images/cropped/crop_pink.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f294c0;
+  }
+  .fejzz::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.396);
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+  .neoni {
+    background-image: url("../assets/images/cropped/crop_ginger.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(245, 96, 3);
+  }
+  .neini::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.396);
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+  .rafali {
+    background-image: url("../assets/images/cropped/crop_coffee.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(220, 86, 2);
+  }
+  .rafali::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.612);
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+}

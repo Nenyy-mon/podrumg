@@ -1,0 +1,149 @@
+.gap {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+}
+.artwork {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-area: auto;
+  gap: 0;
+  overflow: hidden;
+}
+.artwork::after {
+  content: "ARRTWWORRKSS";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: aquamarine;
+  font-size: 3em;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.844);
+  backdrop-filter: blur(2px);
+}
+.images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: bisque;
+}
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.item--1,
+.item--6,
+.item--8 {
+  animation: toRightSlide infinite 25s linear;
+}
+
+.item--3,
+.item--5 {
+  animation: toBottomSlide infinite 25s linear;
+}
+.item--2,
+.item--7,
+.item--4 {
+  animation: toLeftSlide infinite 25s linear;
+}
+
+@keyframes toRightSlide {
+  0%,
+  20%,
+  80% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+  30% {
+    position: relative;
+    left: 500px;
+    opacity: 0;
+  }
+
+  70% {
+    position: relative;
+    left: 500px;
+    opacity: 0;
+  }
+  90% {
+    position: relative;
+    left: 200px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes toBottomSlide {
+  0%,
+  20%,
+  80% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+  30% {
+    position: relative;
+    top: 500px;
+    opacity: 0;
+  }
+
+  70% {
+    position: relative;
+    top: 500px;
+    opacity: 0;
+  }
+  90% {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes toLeftSlide {
+  0%,
+  20%,
+  80% {
+    position: relative;
+    right: 0px;
+    opacity: 1;
+  }
+  30% {
+    position: relative;
+    right: 500px;
+    opacity: 0;
+  }
+
+  70% {
+    position: relative;
+    right: 500px;
+    opacity: 0;
+  }
+  90% {
+    position: relative;
+    right: 200px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    right: 0px;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,59 @@
+html {
+  height: 100vh;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.parallax {
+  transform-style: preserve-3d;
+}
+.bodyRelease {
+  perspective: 1px;
+  padding-top: 20vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+.pictureRelease {
+  display: flex;
+  position: absolute;
+  transform: translateZ(-1px) scale(2.2);
+  padding-bottom: 100px;
+  transform-style: preserve-3d;
+}
+.picture {
+  width: 500px;
+}
+
+.pictureRelease {
+  padding-bottom: 0;
+}
+.newRelHead {
+  color: aquamarine;
+  font-size: 5vw;
+  transform-style: preserve-3d;
+}
+.textIcons {
+  color: aquamarine;
+}
+.sitesRelease {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0px;
+}
