@@ -9,8 +9,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <main>
     <Routes>
-      <Route path='/' element={<MainPage/>}/>
-      <Route path='/template' element={<PlaylistTemplate/>}/>
+      <Route path='/podrumg' element={<MainPage/>}/>
+      <Route path='/podrumg/template' element={<PlaylistTemplate/>}/>
     </Routes>
   </main>
   </BrowserRouter>
