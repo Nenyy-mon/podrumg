@@ -6,9 +6,10 @@ import pic4 from '../assets/artworks/Screenshot_3.png'
 import pic5 from '../assets/artworks/zxczcxzzcxcxz.png'
 import pic6 from "../assets/artworks/191881639_762311644651230_5739836110066220780_n.jpg"
 import pic7 from '../assets/artworks/269624318_634682204241852_4339154954319583394_n.jpg'
+import { NavLink } from "react-router-dom"
 function Artworks() {
     return (
-        <>
+        <NavLink to='/podrumg/artworks'>
         <div className="gap"></div>
         <div className="artwork">
             <figure className="item--1">
@@ -36,7 +37,7 @@ function Artworks() {
             <img src={pic2} className="images" alt="fejzzSkw"/>
             </figure>
         </div>
-        </>
+        </NavLink>
     )
 }
 

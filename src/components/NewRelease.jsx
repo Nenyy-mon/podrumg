@@ -1,24 +1,39 @@
 import release from "../assets/release/Screenshot_17.png"
 import "../styles/release.css"
 import youtube from "../assets/music/1x/Asset 1.png"
-import deezer from "../assets/music/1x/Asset 2.png"
-import spotify from "../assets/music/1x/Asset 3.png"
+import { NavLink } from "react-router-dom"
+import sound1 from "../assets/rafaliMusic/rafali.mp3"
+import useSound from "use-sound"
+import { useState } from "react"
+
+
 function NewRelease() {
+  const [playMe, {stop}] = useSound(sound1, {volume: 0.03},{once:true})
+  const [truth, setTruth] = useState(false)
+
+  function changePlayable() {
+    if(truth == false) {
+      setTruth(true)
+      playMe()
+    } else {
+      setTruth(false)
+      stop()
+    }
+  }
+
     return (
       <div className="parallax">
-      
+        
         <div className="bodyRelease">
            <div className="pictureRelease">
             <img className="picture" src={release} alt="releasePic"  />
            </div>
-            <h1 className="newRelHead">NEEW REELEEASEE</h1>
+            <NavLink onClick={() => changePlayable()} className="newRelHead">NEEW REELEEASEE</NavLink>
           
         </div>
         <div className="sitesRelease">
               <div className="icons">
-                <img className="youtube" src={youtube} alt="" />
-                <img className="deezer" src={spotify} alt="" />
-                <img className="spotify" src={deezer} alt="" />
+              <a href="https://www.youtube.com/c/PodrumGang" target="blank"><img className="youtube" src={youtube} alt="youtube" /></a>
               </div>
            </div>
         </div>

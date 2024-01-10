@@ -61,18 +61,68 @@ div.container {
   background-size: cover;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 850px) {
+  .pCont a {
+    font-size: 1em;
+  }
   .gmizi {
-    background-image: url("../assets/images/cropped/crop_london.jpg");
-    background-position: left;
+    background-image: url("../assets/scrolling/gmizi stretched.png.jpg");
+    background-position: top left 20%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(133, 201, 209);
   }
   .gmizi::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.396);
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+  .fejzzz {
+    background-image: url("../assets/scrolling/fejzzstretched.png.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(133, 201, 209);
+  }
+  .fejzzz::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.396);
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+  .neoni {
+    background-image: url("../assets/scrolling/neoni stretched.png.jpg");
+    background-position: top 100% left 7%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(133, 201, 209);
+  }
+  .neoni::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.396);
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+  .rafali::after {
     content: "";
     display: block;
     width: 100%;
@@ -98,53 +148,5 @@ div.container {
     align-items: center;
     width: 100vw !important;
     box-sizing: border-box;
-  }
-  .fejzz {
-    background-image: url("../assets/images/cropped/crop_pink.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #f294c0;
-  }
-  .fejzz::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.396);
-    backdrop-filter: blur(5px);
-    position: absolute;
-  }
-  .neoni {
-    background-image: url("../assets/images/cropped/crop_ginger.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgb(245, 96, 3);
-  }
-  .neini::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.396);
-    backdrop-filter: blur(5px);
-    position: absolute;
-  }
-  .rafali {
-    background-image: url("../assets/images/cropped/crop_coffee.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgb(220, 86, 2);
-  }
-  .rafali::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.612);
-    backdrop-filter: blur(5px);
-    position: absolute;
   }
 }

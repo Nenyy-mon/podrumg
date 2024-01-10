@@ -147,3 +147,42 @@ figure {
     opacity: 1;
   }
 }
+@media (max-width: 850px) {
+  .gap {
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+  }
+  .artwork {
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: auto;
+    gap: 0;
+    overflow: hidden;
+  }
+  .artwork::after {
+    content: "ARRTWWORRKSS";
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    color: aquamarine;
+    font-size: 1em;
+    font-weight: 800;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.844);
+    backdrop-filter: blur(2px);
+  }
+  .images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: bisque;
+  }
+}

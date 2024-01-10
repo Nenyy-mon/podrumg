@@ -8,12 +8,12 @@ function PlaylistNav() {
         <div className="main">
             <div className="logo">
             <NavLink
-            className="log" to="/"> 
+            className="log" to="/podrumg"> 
             <img className="podrumL" src={logo} alt="PODRUMLogo" />
         </NavLink>
             </div>
             <div className="goback">
-                <NavLink to='/' className='linkBack'>BBACCK</NavLink>
+                <NavLink to='/podrumg' className='linkBack'>BBACCK</NavLink>
             </div>
         </div>
         </>
